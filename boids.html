@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Boids HTML5 JS</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+</head>
+
+<body>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+<script type="text/javascript" src="myScript.js"></script>
+<div id="myInput">
+    <form>
+        <strong>Add/Remove Boids:</strong> 0<input type="range" id="boidCount" value="50" onchange="OnSliderInput()">100
+        
+    </form>
+
+    <form>
+    	<strong>Boid Speed</strong> Slow<input type="range" id="boidSpeed" value="50" onchange="OnSliderInput2()">Fast
+    </form>
+    <form>
+    	<strong>Cohesion</strong> 0<input type="range" id="boidCoh" value="50" onchange="OnSliderInput3()">100
+    </form>
+    <form>
+    	<strong>Separation</strong> 0<input type="range" id="boidSep" value="50" onchange="OnSliderInput4()">100
+    </form>
+    <form>
+    	<strong>Alignment</strong> 0<input type="range" id="boidAli" value="50" onchange="OnSliderInput5()">100
+    </form>
+
+    <form action="">
+    <input type="radio" name="objSel" value="Attractor" onclick="onRadioBtn0()">Attractor<br>
+    <input type="radio" name="objSel" value="Detractor" onclick="onRadioBtn1()">Detractor
+    </form>
+
+</div>
+<div id="debug"></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿body {
+}
+#myCanvas
+{
+    background-color:#003056;
+    margin:auto;
+    display:block;
+}
+
+#myInput
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#EEEEEE;
+    width:800px;
+}
